@@ -117,10 +117,6 @@ const dailyData = {
                 });
 
 
-
-
-
-
 page_alert.innerHTML =
 `
 <div class="alert-banner">
@@ -147,10 +143,14 @@ page_alert.addEventListener('click', e => {
 
 send.addEventListener('click', (e)=>{
     e.preventDefault();
-    if(userField.value === '' || messageField.value === ''){
-        alert('Sorry, there was a error. Please try again');
+    if(userField.value === '' && messageField.value !== ''){
+        alert('Please fill in the user field');
+    }else if (messageField.value === '' && userField.value !== ''){
+        alert(`Please fill in the message field`);
+    }else if (messageField.value === '' && userField.value === ''){
+        alert(`Please fill in the message and user field`);
     }else{
-        alert(`Message sent to ${userField.value}`);
+        alert(`Message sent sucessfully to ${userField.value}`);
     }
 });
 
