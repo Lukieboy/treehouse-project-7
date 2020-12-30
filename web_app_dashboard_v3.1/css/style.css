@@ -133,7 +133,9 @@ li{
 }
 
 @media (min-width:768px){
-
+    .button-disabled{
+        margin-left: 0px;
+    }
     .traffic-text{
         display: inline;
     }
@@ -199,7 +201,7 @@ li{
     padding-right: 20px;
 }
 .settings button{
-    width: 43vw;
+    width: 40vw;
 }
 .settings select{
     width: 80vw;
@@ -655,7 +657,6 @@ main{
     padding: 7px; 
     background-color:rgb(151, 151, 151);
     border-radius: 5px;
-    margin-left: 15px;
 }
 
 
@@ -742,3 +743,8 @@ h3{
 
 
 
+
+
+.profile{
+    margin-bottom: 30px;
+}
