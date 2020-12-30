@@ -427,7 +427,8 @@ p, a {
     display: inline;
 }
 
-.members-container{
+.members-container,
+.new-members-container{
     display: flex;
     padding-top: 10px; 
     padding-bottom: 10px;
@@ -436,6 +437,10 @@ p, a {
 
 p{
     margin-left: auto;
+}
+
+.new-members-container{
+    flex-wrap: wrap;
 }
 
 .members, .recent, .settings, .message{
